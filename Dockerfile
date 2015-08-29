@@ -12,7 +12,7 @@ RUN /bin/ln -sf ../sites-available/default-ssl /etc/apache2/sites-enabled/001-de
 #RUN /bin/ln -sf ../mods-available/ssl.load /etc/apache2/mods-enabled/
 
 EXPOSE 80
-EXPOSE 443
+#EXPOSE 443
 
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 
